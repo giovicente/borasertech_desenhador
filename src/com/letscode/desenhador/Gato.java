@@ -1,6 +1,6 @@
 package com.letscode.desenhador;
 
-public class Gato extends Animal {
+public class Gato implements IDesenhador {
 
     @Override
     public void desenha() {
@@ -18,4 +18,17 @@ public class Gato extends Animal {
                 "                         (_/");
     }
 
+    @Override
+    public void desenha(String nome, int idade) {
+
+    }
+
+    public static String mia() {
+        return "Miau";
+    }
+
 }
+
+
+// public class A extends B, C - não dá pra fazer
+// public class A implements B, C - é possível fazer
